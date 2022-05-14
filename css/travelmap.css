@@ -1,0 +1,332 @@
+:root {
+	--body-color: #fff;
+	--green-color: #8B008B ;
+	--black-color: #000000;
+	--gray-color: #f8f8f8;
+}
+
+body {
+	background-color: var(--body-color);
+	font-family: "Roboto", sans-serif !important;
+}
+
+* {
+	-webkit-transition:all 0.5s ease;
+	-moz-transition:all 0.5s ease;
+	-o-transition:all 0.5s ease;
+	transition:all 0.5s ease;
+}
+
+.sec-title h2 {
+	/*font-weight: bold !important;*/
+	color: var(--black-color);
+}
+
+.sec-title img {
+	height: 80px;
+	width: auto;
+}
+
+.sec-title::after {
+  content: "";
+  width: 120px;
+  height: 2px;
+  background-color: var(--green-color);
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.row {
+	padding: 0 !important;
+}
+
+/*start navbar */
+.navbar {
+	background-color: var(--body-color) !important;
+	box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-brand {
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-size: 30px;
+	letter-spacing: 2px;
+}
+
+
+.navbar-brand span {
+	color: var(--green-color) !important;
+}
+.navbar-light .navbar-nav .nav-link {
+	color: var(--black-color);
+	font-weight: bold;
+	margin: 0.5rem;
+}
+
+.navbar-light .navbar-nav .nav-link.active,.navbar-light .navbar-nav .nav-link:hover,.navbar-light .navbar-nav .nav-link:focus {
+	color: var(--green-color);
+}
+
+.navbar-light .navbar-nav .main-btn {
+	background-color: var(--green-color);
+	padding: 1rem 1rem;
+	border: none;
+}
+
+/*end navbar*/
+
+/*start header one*/
+
+.header-one {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../imgs/Camping-Tips-beginners.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: calc(100vh - 72px);
+	padding-top: 20vh;
+}
+
+.header-one h1 {
+	font-family: 'Trebuchet MS', sans-serif;
+	color: var(--body-color);
+}
+
+.header-one .card, .header-one p {
+	color: var(--body-color);
+}
+
+.header-one span {
+	color: var(--body-color);
+}
+
+.header-one .search {
+	background-color: var(--body-color);
+	color: var(--green-color);
+}
+
+.header-one input[type="text"] {
+	background: none;
+	outline: var(--green-color);
+	color: var(--body-color);
+	border: 3px var(--body-color) solid;
+}
+
+/*end header one*/
+
+/*start hotels*/
+
+.hotels {
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
+
+.hotels .hotel {
+	padding: 20px;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.hotels .hotel:hover {
+	transform: scale(1.05) rotate(0) ;
+	transition:0.5s ;
+}
+
+.hotels .hotel button {
+	background-color: var(--green-color);
+	color: var(--body-color);
+}
+
+.hotels .hotel img {
+	margin: 0;
+}
+
+.hotels .hotel h4 {
+	font-weight: bold;
+	font-family: 'Trebuchet MS', sans-serif;
+	font-size: 1.1rem;
+	padding-top: 2%;
+}
+
+
+
+/*end hotels*/
+
+/*start features*/
+
+.features {
+	/* background-color: var(--gray-color); */
+	background-color: var(--gray-color);
+	padding-top: 1rem;
+	padding-bottom: 4rem;
+}
+
+.features .row {
+	background-image: url(../imgs/Camping-Tips-beginners.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	padding-top: 3% !important;
+	padding-bottom: 3% !important;
+}
+
+.features .feature {
+	padding: 20px;
+	margin: 15px;
+	box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.2);
+	overflow: hidden;
+	background-color: var(--gray-color);
+	cursor: pointer;
+}
+.features .feature:hover {
+	transition: 0.5s;
+	box-shadow: 0px 0px 4px 0px #000;
+}
+.features .feature:hover .feic {
+	transform: scale(1.5) rotate(360deg) !important;
+}
+
+.features .feature .feic {
+	font-size: 30px;
+	color: var(--green-color);
+}
+
+.features .feature p {
+	padding-left: 10%;
+	width: 90%;
+	color: var(--black-color);
+}
+
+/*end features*/
+
+/* start products */
+
+.blogs {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	overflow: hidden;
+	background-color: var(--body-color);
+}
+
+.blogs .card {
+	margin-top: 15px;
+}
+
+.blogs .card .card-img-overlay {
+	background-color: rgba(0, 0, 0, 0.5);
+	padding-top: 15%;
+}
+
+.blogs .card .card-img-overlay button {
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: var(--green-color);
+	border: none;
+	color: var(--body-color);
+}
+
+
+.blogs .carousel-indicators {
+	bottom: -5rem;
+}
+
+.blogs .carousel-indicators button {
+	font-size: 1.1rem;
+	background-color: var(--body-color);
+
+	width: 2rem;
+	height: 2rem;
+	color: var(--green-color);
+	text-indent: 0;
+	overflow: hidden;
+	margin: 0px;
+}
+
+.blogs .others {
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+}
+
+.blogs .others button {
+	margin-top: 2rem;
+	background-color: var(--green-color);
+	border: none;
+}
+
+.blogs .others .card .card-img-overlay * {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+
+@media screen and (max-width: 800px) {
+	.blogs .card .card-img-overlay {
+		padding-top: 10%;
+	}
+
+	.blogs .card .card-img-overlay button {   
+		top: 70%;
+	}
+}
+
+/* end blogs */
+
+/* start about-us */
+
+.about-us {
+	background-image: url(../imgs/bg1.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
+
+.about-us .about-card {
+	background-color: var(--body-color);
+	padding: 2rem;
+}
+
+/* end about-us */
+
+/* start contact-us */
+
+.contact-us {
+	padding-top: 5%;
+	padding-bottom: 5%;
+	background-color: var(--gray-color);
+}
+
+.contact-us h2 {
+	letter-spacing: 2px;
+	font-weight: bold;
+	color: var(--green-color);
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+.contact-us p {
+	padding-left: 5px;
+}
+
+.contact-us .btn {
+	background-color: var(--green-color);
+	color: var(--body-color);
+	border: none;
+}
+
+.email {
+	font-weight: bold;
+	color: var(--green-color);
+}
+
+.contact-us ul {
+  list-style: none;
+}
+
+.contact-us ul li::before {
+  content: "\200B";
+}
+
+
+/* end contact-us */
